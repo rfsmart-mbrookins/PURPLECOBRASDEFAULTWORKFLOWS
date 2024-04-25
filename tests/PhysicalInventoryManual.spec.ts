@@ -22,7 +22,7 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('Locator').fill('A.1.1.1');
   await page.getByPlaceholder('Locator').press('Enter');
   await page.getByPlaceholder('Item Number').click();
-  await page.getByPlaceholder('Itme Number').fill('CD-REG-ITEM-01');
+  await page.getByPlaceholder('Item Number').fill('CD-REG-ITEM-01');
   await page.getByPlaceholder('Item Number').press('Enter');
   await page.getByPlaceholder('Quantity').click();
   await page.getByPlaceholder('Quantity').fill('10');
