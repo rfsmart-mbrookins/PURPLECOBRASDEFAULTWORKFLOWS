@@ -9,7 +9,7 @@ test('test', async ({ page }) => {
   await page.getByRole('button', {name: 'Login'}).click();
   await page.getByRole('link', { name: 'QA Regression' }).click();
   await page.getByRole('link', { name: 'Account Alias Receipt By Lot' }).click();
-  await page.getByPlaceholder('Organization Code').click();
+  await page.getByPlaceholder('Organization Code').click(); 
   await page.getByPlaceholder('Organization Code').fill('001');
   await page.getByPlaceholder('Organization Code').press('Enter');
   await page.getByPlaceholder('Account Source').click();
