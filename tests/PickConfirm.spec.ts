@@ -13,9 +13,9 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('Organization Code').fill('001');
   await page.getByPlaceholder('Organization Code').press('Enter');
   //Collect Pick Slip screen keeps pulling "something french" into the field; even after correction in Vocabulary section. Need to check on this. 
-  await page.getByPlaceholder('Something French').click();
-  await page.getByPlaceholder('Something French').fill('27146');
-  await page.getByPlaceholder('Something French').press('Enter');
+  await page.getByPlaceholder('Pick Slip').click();
+  await page.getByPlaceholder('Pick Slip').fill('45040');
+  await page.getByPlaceholder('Pick Slip').press('Enter');
   await page.getByPlaceholder('Subinventory').click();
   await page.getByPlaceholder('Subinventory').fill('CS1');
   await page.getByPlaceholder('Subinventory').press('Enter');

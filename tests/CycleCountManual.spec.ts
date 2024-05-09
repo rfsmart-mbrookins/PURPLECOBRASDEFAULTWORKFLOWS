@@ -13,7 +13,7 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('Organization Code').fill('001');
   await page.getByPlaceholder('Organization Code').press('Enter');
   await page.getByPlaceholder('Count Name').click();
-  await page.getByPlaceholder('Count Name').fill('QACycleCount');
+  await page.getByPlaceholder('Count Name').fill('OCBA Cycle Count');
   await page.getByPlaceholder('Count Name').press('Enter');
   await page.getByPlaceholder('Subinventory').click();
   await page.getByPlaceholder('Subinventory').fill('Stores');
