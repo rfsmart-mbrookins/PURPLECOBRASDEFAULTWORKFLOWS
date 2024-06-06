@@ -2,11 +2,17 @@ import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
   await page.goto ('https://icsstg-purplecobras.oraclecloud.rfsmart.com/webclient');
-  await page.getByPlaceholder('Username').click();
-  await page.getByPlaceholder('Username').fill('dev.one');
+/* Enable for Auth Server disable for legacy login*/
+  // await page.getByPlaceholder('Username').click();
+  // await page.getByPlaceholder('Username').fill('dev.one');
+  // await page.getByRole('button', {name: 'Login'}).click();
+/* Enable for legacy disable for auth server login*/
+  await page.getByPlaceholder('User ID').click();
+  await page.getByPlaceholder('User ID').fill('frank.eagan');
   await page.getByPlaceholder('Password').click();
   await page.getByPlaceholder('Password').fill('RFSics1650');
-  await page.getByRole('button', {name: 'Login'}).click();
+
+  await page.getByRole('link', { name: 'Enter' }).click();
   await page.getByRole('link', { name: 'QA Regression' }).click();
   await page.getByRole('link', { name: 'Account Alias Receipt 02' }).click();
   await page.getByPlaceholder('Organization Code').click();
