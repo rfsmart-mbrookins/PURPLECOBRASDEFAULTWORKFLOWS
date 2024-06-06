@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
-  await page.goto('https://icsstg-purplecobras.oraclecloud.rfsmart.com/webclient');
+  await page.goto('https://icsstg-immortalwizards.oraclecloud.rfsmart.com/webclient');
   const Username = 'dev.one'
   const UserID = 'dev.one'
   const Password = 'RFSics1650'
